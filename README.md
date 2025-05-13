@@ -4,7 +4,7 @@ I've establised an iperf3-Server. You can accecc the server with "202.61.247.117
 The IP Adress is also useful for the Monitoring-Gateway adress on your router
 
 #TestUploadSpeedTCP
-#iperf3 -c 202.61.247.117 -p 31415 -P 10 
+#iperf3 -c 202.61.247.117 -p 31415 -P 10 -R |grep -E "sender|receiver"
 
 [nynros@deepthought ~]$ iperf3 -c 202.61.247.117 -p 31415 -P 10 |grep -E "sender|receiver"
 [  5]   0.00-10.00  sec  4.98 MBytes  4.17 Mbits/sec   17             sender
